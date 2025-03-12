@@ -59,20 +59,20 @@ function drawApp() {
 	if (!isB2) { // Bangle.js 1
                  setWatch(function(e) {
                    E.showMessage('camShot !');
-                   Bangle.buzz(300, 1);
+                   // Bangle.buzz(300, 1);
                    setTimeout(drawApp, 1000);
                    camShot(() => {});
                  }, BTN2, { edge:"falling",repeat:true,debounce:50});
                } else { // Bangle.js 2
                  setWatch(function(e) {
                    E.showMessage('camShot !');
-                   Bangle.buzz(300, 1);
+                   // Bangle.buzz(300, 1);
                    setTimeout(drawApp, 1000);
                    camShot(() => {});
                  }, BTN, { edge:"falling",repeat:true,debounce:50});
                  Bangle.on('touch', function (wat, tap) {
                       E.showMessage('camShot !');
-                   Bangle.buzz(300, 1);
+                   // Bangle.buzz(300, 1);
                    setTimeout(drawApp, 1000);
                    camShot(() => {});
                  });
